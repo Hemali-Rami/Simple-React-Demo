@@ -9,26 +9,93 @@
   .reviewboxwrp {
     max-width: 500px;
     margin: 30px auto 0;
+    position: relative;
     .testimaonialbox {
       box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
       padding: 30px 0px 0;
       border-radius: 15px;
-      img{
-        border-radius:50%;
+      .imagebox {
+        position: relative;
+        img {
+          border-radius: 50%;
+          min-width: 250px;
+          max-width: 250px;
+          max-height: 250px;
+          min-height: 250px;
+        }
+        svg {
+          position: absolute;
+          top: 30px;
+          left: 60px;
+          path {
+            fill: $birthdaybgcolor;
+            width: 30px;
+            height: 30px;
+            display: inline-block;
+          }
+        }
       }
-      .personpro{
+
+      .personpro {
         padding: 20px;
-        background:#f1f1f1;
+        background: $lighgraycolor;
         margin-top: 30px;
-        h4{
-            font-weight: 600;
-            margin-bottom: 5px;
+        h4 {
+          font-weight: 600;
+          margin-bottom: 5px;
         }
-        span{
-            color:#757575;
-         margin-bottom: 5px;   
+        span {
+          color: $lightfontcolor;
+          margin-bottom: 5px;
         }
       }
+    }
+    .sliderarrows {
+      display: flex;
+      align-items: center;
+      .slider_arrow {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        background: $whitecolor;
+        top: 50%;
+        transform: translateY(-50%);
+        button {
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background: none;
+          border: none;
+          padding: 0;
+          z-index: 1;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          &:hover {
+            background: $birthdaybgcolor;
+            svg {
+              path {
+                fill: $whitecolor;
+              }
+            }
+          }
+        }
+      }
+      .next {
+        right: -20px;
+      }
+      .previous {
+        left: -20px;
+      }
+    }
+  }
+  .randomperson {
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    button {
+      @include lightbutton;
     }
   }
 }

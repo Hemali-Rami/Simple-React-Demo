@@ -180,6 +180,10 @@ body label {
   font-family: "Montserrat";
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @keyframes lds-ellipsis1 {
   0% {
     transform: scale(0);
@@ -264,14 +268,33 @@ body label {
 .reviewmain .reviewboxwrp {
   max-width: 500px;
   margin: 30px auto 0;
+  position: relative;
 }
 .reviewmain .reviewboxwrp .testimaonialbox {
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
   padding: 30px 0px 0;
   border-radius: 15px;
 }
-.reviewmain .reviewboxwrp .testimaonialbox img {
+.reviewmain .reviewboxwrp .testimaonialbox .imagebox {
+  position: relative;
+}
+.reviewmain .reviewboxwrp .testimaonialbox .imagebox img {
   border-radius: 50%;
+  min-width: 250px;
+  max-width: 250px;
+  max-height: 250px;
+  min-height: 250px;
+}
+.reviewmain .reviewboxwrp .testimaonialbox .imagebox svg {
+  position: absolute;
+  top: 30px;
+  left: 60px;
+}
+.reviewmain .reviewboxwrp .testimaonialbox .imagebox svg path {
+  fill: #F28AB2;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
 }
 .reviewmain .reviewboxwrp .testimaonialbox .personpro {
   padding: 20px;
@@ -285,4 +308,62 @@ body label {
 .reviewmain .reviewboxwrp .testimaonialbox .personpro span {
   color: #757575;
   margin-bottom: 5px;
+}
+.reviewmain .reviewboxwrp .sliderarrows {
+  display: flex;
+  align-items: center;
+}
+.reviewmain .reviewboxwrp .sliderarrows .slider_arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  background: #fff;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.reviewmain .reviewboxwrp .sliderarrows .slider_arrow button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  padding: 0;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+}
+.reviewmain .reviewboxwrp .sliderarrows .slider_arrow button:hover {
+  background: #F28AB2;
+}
+.reviewmain .reviewboxwrp .sliderarrows .slider_arrow button:hover svg path {
+  fill: #fff;
+}
+.reviewmain .reviewboxwrp .sliderarrows .next {
+  right: -20px;
+}
+.reviewmain .reviewboxwrp .sliderarrows .previous {
+  left: -20px;
+}
+.reviewmain .randomperson {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+}
+.reviewmain .randomperson button {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  background: none;
+  border: none;
+  padding: 8px 35px;
+  text-align: center;
+  color: rgb(242, 138, 178);
+  background: #fff;
+  border-radius: 25px;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: capitalize;
+  border: 1px solid rgb(242, 138, 178);
 }/*# sourceMappingURL=Review.css.map */
