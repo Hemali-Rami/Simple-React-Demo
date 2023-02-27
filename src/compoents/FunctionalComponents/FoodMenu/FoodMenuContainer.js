@@ -8,7 +8,7 @@ const FoodMenuContainer = () => {
   const allcategory = ["all", ...new Set(items.map((item) => item.categ))];
   console.log(allcategory);
   const [menuitems, setMenuitems] = useState(items);
-  const [categories, setCategories] = useState(allcategory);
+  const [categories] = useState(allcategory);
   const getCategories = (categ) => {
     //For all button items
     if (categ === "all") {
