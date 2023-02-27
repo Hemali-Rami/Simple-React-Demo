@@ -1,0 +1,55 @@
+@import "../scss/style.scss";
+@import "../scss/variables.scss";
+.verticaltabswrap {
+  background: #e8dff5;
+  .verticaltabpart {
+    padding: $sectionunderspace;
+    h3 {
+      @include mainheading;
+      margin-bottom: 50px;
+    }
+    .tabsmain {
+      display: flex;
+      .tabsbutton {
+        button {
+          @include lightbutton;
+          margin-bottom: 20px;
+          display: block;
+          border-radius: 0;
+          min-width: 208px;
+          &:last-child {
+            margin-bottom: 0px;
+          }
+        }
+      }
+      .tabsinfo {
+        background: #fff;
+        flex: 1;
+        margin-left: 30px;
+        padding: 60px 40px;
+        text-align: left;
+        h1 {
+          @include mainheading;
+          text-align: center;
+          width: 100%;
+          margin-bottom: 30px;
+        }
+        .emp_info {
+          h2 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #000;
+            margin-bottom: 20px;
+          }
+          p {
+            b {
+              width: 80px;
+              display:inline-block;
+            }
+            margin-bottom: 4px;
+          }
+        }
+      }
+    }
+  }
+}
