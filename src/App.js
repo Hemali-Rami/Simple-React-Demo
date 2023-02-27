@@ -1,7 +1,8 @@
 import Birthdayreminemain from "./compoents/FunctionalComponents/BithdayReminder/Birthdayreminemain.js";
 import TourContainer from "./compoents/FunctionalComponents/Tour/TourContainer";
 import { Reviewmain } from "./compoents/FunctionalComponents/Review/Reviewmain";
-import  AccordianContainer  from "./compoents/FunctionalComponents/Accordian/AccordianContainer";
+import AccordianContainer from "./compoents/FunctionalComponents/Accordian/AccordianContainer";
+import FoodMenuContainer from "./compoents/FunctionalComponents/FoodMenu/FoodMenuContainer";
 import "./scss/style.css";
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <TourContainer />
       <Reviewmain />
       <AccordianContainer />
+      <FoodMenuContainer />
     </>
   );
 }
