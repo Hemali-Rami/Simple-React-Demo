@@ -23,7 +23,7 @@ const TabsContainer = () => {
     );
   }
   console.log();
-  const { name, username, email, website, phone } = Jobs[value];
+  const { name, email, website, phone } = Jobs[value];
   return (
     <div className="verticaltabswrap">
       <div className="container">
