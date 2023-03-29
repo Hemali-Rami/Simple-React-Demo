@@ -5,6 +5,7 @@
   background: $birthdaybgcolor;
   padding: $sectionunderspace;
   padding-top: 50px;
+  height: 100vh;
   h3 {
     @include mainheading;
     &:after {

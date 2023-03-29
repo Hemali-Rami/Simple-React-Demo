@@ -1,5 +1,4 @@
 import React from "react";
-
 export const Tour = ({ id, name, username, email, removeTour }) => {
   return (
     <div className="tourmainbox" key={id}>

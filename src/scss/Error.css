@@ -240,37 +240,28 @@ html {
   animation: lds-ellipsis3 0.6s infinite;
 }
 
-.birthdauremiderwrap {
-  background: #F28AB2;
-  padding: 80px 0;
-  padding-top: 50px;
-  height: 100vh;
+.erroepagewrapper .errorpagepart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0;
 }
-.birthdauremiderwrap h3 {
-  font-size: 30px;
-  line-height: 1.5;
+.erroepagewrapper .errorpagepart .error404image img {
+  width: 100%;
+  max-width: 100%;
+}
+.erroepagewrapper .errorpagepart .errordescpart {
+  text-align: center;
+  margin-top: 30px;
+}
+.erroepagewrapper .errorpagepart .errordescpart h4 {
   font-weight: 700;
-  color: #000;
-  position: relative;
+  font-size: 40px;
+  margin-bottom: 30px;
   text-transform: capitalize;
-  padding-bottom: 15px;
-  display: inline-block;
-  margin: auto;
 }
-.birthdauremiderwrap h3:after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  border: 1px solid #F28AB2;
-  width: 20%;
-  left: 0;
-  right: 0;
-  margin: auto;
-}
-.birthdauremiderwrap h3:after {
-  border-color: #fff;
-}
-.birthdauremiderwrap button {
+.erroepagewrapper .errorpagepart .errordescpart a {
   -webkit-appearance: none;
   appearance: none;
   -moz-appearance: none;
@@ -285,27 +276,5 @@ html {
   font-size: 16px;
   text-transform: capitalize;
   border: 1px solid rgb(242, 138, 178);
-}
-.birthdauremiderwrap .birthdayremimderbox {
-  background: #fff;
-  border-radius: 10px;
-  max-width: 400px;
-  margin: auto;
-  margin-top: 40px;
-  padding: 20px;
-  box-shadow: 20px 10px 3px rgba(0, 0, 0, 0.2);
-}
-.birthdauremiderwrap .birthdayremimderbox h4 {
-  font-size: 20px;
-  color: #000;
-  font-weight: 600;
-  text-transform: capitalize;
-  text-align: left;
-}
-.birthdauremiderwrap .birthdayremimderbox .personwrap {
-  margin: 20px 0;
-}
-.birthdauremiderwrap .birthdayremimderbox .personwrap h6 {
-  font-weight: 600;
-  margin-right: 10px;
-}/*# sourceMappingURL=BirthdayReminder.css.map */
+  padding: 15px 25px;
+}/*# sourceMappingURL=Error.css.map */

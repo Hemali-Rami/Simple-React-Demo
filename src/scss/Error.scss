@@ -1,0 +1,31 @@
+@import "../scss/style.scss";
+@import "../scss/variables.scss";
+.erroepagewrapper {
+  .errorpagepart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 50px 0;
+    .error404image {
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+    .errordescpart {
+      text-align: center;
+      margin-top: 30px;
+      h4 {
+        font-weight: 700;
+        font-size: 40px;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+      }
+      a {
+        @include lightbutton;
+        padding: 15px 25px;
+      }
+    }
+  }
+}

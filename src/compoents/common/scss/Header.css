@@ -1,0 +1,62 @@
+@import url(../../../scss/variables.scss);
+header {
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.5s ease-in-out 0s;
+}
+header .headerpart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+header .headerpart .logopart a {
+  color: #F28AB2;
+  font-size: 30px;
+  letter-spacing: 2px;
+  border: 1px dotted #F28AB2;
+  padding: 5px 30px;
+  border-radius: 8px;
+}
+header .headerpart .logopart a span {
+  font-family: "Fasthand", cursive;
+}
+header .headerpart .menuwrap ul {
+  display: flex;
+}
+header .headerpart .menuwrap ul li {
+  padding: 0 10px;
+}
+header .headerpart .menuwrap ul li:last-child {
+  padding-right: 0;
+}
+header .headerpart .menuwrap ul li a {
+  color: #000;
+  font-weight: 500;
+  margin: 0 10px;
+  position: relative;
+  padding-bottom: 10px;
+}
+header .headerpart .menuwrap ul li a::before {
+  content: "";
+  position: absolute;
+  background: #F28AB2;
+  width: 0%;
+  height: 2px;
+  border-radius: 5px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.5s ease-in-out 0s;
+}
+header .headerpart .menuwrap ul li a:hover::before {
+  width: 100%;
+  transition: width 0.5s ease-in-out 0s;
+}
+header.affix {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 9;
+  transition: all 0.2s ease-in-out 0s;
+}/*# sourceMappingURL=Header.css.map */

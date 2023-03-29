@@ -1,0 +1,11 @@
+@import "../scss/style.scss";
+@import "../scss/variables.scss";
+.digitalclockwrapper {
+  padding: $sectionunderspace;
+  background: #e6edf3;
+  .digitalclockpart {
+    h3 {
+      @include mainheading;
+    }
+  }
+}

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useEffect } from "react";
 import Tours from "./Tours";
 import "../../../scss/Tours.css";
+import { Loader } from "../../common/Loader";
 const url = "https://jsonplaceholder.typicode.com/users";
 const TourContainer = () => {
   const [loading, setLoading] = useState(true);
@@ -28,16 +29,7 @@ const TourContainer = () => {
   }, []);
   if (loading) {
     return (
-      <div className="loaderwrapper">
-        <div className="container text-center">
-          {/* <h1>Loading.....</h1> */}
-          <div className="lds-ellipsis">
-            <div></div>
-            <div></div>
-            <div></div>
-          </div>
-        </div>
-      </div>
+      <Loader/>
     );
   }
   if (tour.length === 0) {
